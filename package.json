@@ -7,6 +7,7 @@
   "dependencies": {
     "@allmarkedup/fractal-gulp-plugin": "^1.0.0",
     "@frctl/fractal": "^0.10.4",
+    "@frctl/nunjucks-adapter": "^0.4.5",
     "request-promise": "^2.0.1"
   },
   "devDependencies": {

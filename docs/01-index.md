@@ -1,5 +1,5 @@
 ---
-title: Fractal Handlebars Demo
+title: Fractal Demo
 ---
 
 This is a demo of the default [Fractal](http://github.com/frctl/fractal) web interface. The full source code for this demo repository is [available on Github](https://github.com/frctl/handlebars-demo). Have a poke around!
@@ -15,3 +15,5 @@ Fractal lets you organise and name your components as you see fit - the way it's
 The example components use Handlebars for their template engine. This is the default template engine that comes with Fractal.
 
 They use a mix of different [configuration file formats](https://github.com/frctl/fractal/blob/master/docs/configuration-files.md) in order to give a range of examples of what is possible.
+
+## Documentation
