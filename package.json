@@ -1,0 +1,21 @@
+{
+  "name": "@frctl/handlebars-demo",
+  "version": "1.0.0",
+  "description": "Handlebars-based Fractal demo repository.",
+  "author": "Mark Perkins <mark@clearleft.com> (http://clearleft.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@allmarkedup/fractal-gulp-plugin": "^1.0.0",
+    "@frctl/fractal": "^0.10.4",
+    "request-promise": "^2.0.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sass-glob": "^1.0.5"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
