@@ -1,6 +1,10 @@
 'use strict';
 
-const fractal = require('@frctl/fractal');
+/*
+ * Create a new Fractal instance and export it for use elsewhere if required
+ */
+
+const fractal = module.exports = require('@frctl/fractal').create();
 
 /*
  * General project configuration.
@@ -10,51 +14,82 @@ fractal.set('project.title', 'Fractal Demo');
 
 /*
  * Configure components.
- *
- * The components use Handlebars templates by default, however in
- * this example we are expicitly loading the handlebars adapter so that we can
- * pass in some custom configuration. In this case it's to autoload
- * the optional Fractal Handlebars helper library (https://github.com/frctl/handlebars-helpers).
- *
  */
 
-fractal.set('components.path', `${__dirname}/src`);
+fractal.set('components.path', `${__dirname}/components`);
 fractal.set('components.default.preview', '@skeleton');
 
-fractal.engine('handlebars', '@frctl/handlebars-adapter', {
-    loadHelpers: true
+/*
+ * Configure the Handlebars template engine used by components
+ *
+ * Components use Handlebars templates by default, so this step normally not required.
+ * However in this example we are expicitly loading the handlebars adapter
+ * to demonstrate how to add custom Handlebars helpers that you can then use
+ * in your components.
+ *
+ * See https://github.com/frctl/handlebars for more information on the Handlebars
+ * adapter and bundled helpers.
+ */
+
+const handlebarsAdapter = require('@frctl/handlebars');
+
+const hbs = handlebarsAdapter({
+    helpers: {
+        uppercase: function(str) {
+            return str.toUpperCase();
+        },
+        lowercase: function(str) {
+            return str.toLowerCase();
+        }
+    }
 });
+
+fractal.components.engine(hbs);
 
 /*
  * Configure docs.
- *
- * In this example we are going to use Nunjucks () as a templating engine for
- * our documentation pages, instead of Handlebars (the default).
- * See https://github.com/frctl/nunjucks-adapter for more details on using Nunjucks with Fractal.
  */
 
 fractal.set('docs.path', `${__dirname}/docs`);
-fractal.set('docs.engine', `nunjucks`);
 
-fractal.engine('nunjucks', '@frctl/nunjucks-adapter');
+/*
+ * Configure the template engine used for documentation pages.
+ *
+ * In this example we are going to use Nunjucks as a templating engine for
+ * our documentation pages, instead of Handlebars (the default). This example
+ * also demonstrates how to customise the standard Nunjucks install with a bespoke filter.
+ *
+ * See https://github.com/frctl/nunjucks for more details on using Nunjucks with Fractal.
+ */
+
+const nunjucksAdapter = require('@frctl/nunjucks');
+
+const nunj = nunjucksAdapter({
+    filter: {
+        link: function filterFunc(){}
+    },
+});
+
+fractal.docs.engine(nunj);
 
 /*
  * Configure the web interface.
  */
 
-fractal.set('plugins.web.static.path', `${__dirname}/public`);
-fractal.set('themes.mandelbrot.skin', 'maroon');
+fractal.set('web.static.path', 'public');
+fractal.set('web.builder.dest', 'build');
 
-/*
- * Add some other useful plugins
- */
+ /*
+  * Customise the web interface theme.
+  *
+  * This step is not needed if you want to just use the default theme
+  * out-of-the-box. This example demonstrates some simple theme customisation
+  * but you can also create your own bespoke themes or undertake much more extensive
+  * customisation if required.
+  */
 
-fractal.plugin('@allmarkedup/fractal-gulp-plugin', {
-    gulp: require('./gulpfile')
+const theme = require('@frctl/mandelbrot')({
+    skin: 'maroon'
 });
 
-/*
- * Export the Fractal instance so it can be require'd by other modules if needed.
- */
-
-module.exports = fractal;
+fractal.web.theme(theme);

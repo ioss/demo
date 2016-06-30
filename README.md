@@ -1,1 +1,1 @@
-# Handlebars-based Fractal demo
+# Fractal demo
