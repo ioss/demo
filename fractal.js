@@ -16,8 +16,8 @@ fractal.set('project.title', 'Fractal Demo');
  * Configure components.
  */
 
-fractal.set('components.path', `${__dirname}/components`);
-fractal.set('components.default.preview', '@skeleton');
+fractal.components.set('path', `${__dirname}/components`);
+fractal.components.set('default.preview', '@skeleton');
 
 /*
  * Configure the Handlebars template engine used by components
@@ -50,7 +50,7 @@ fractal.components.engine(hbs);
  * Configure docs.
  */
 
-fractal.set('docs.path', `${__dirname}/docs`);
+fractal.docs.set('path', `${__dirname}/docs`);
 
 /*
  * Configure the template engine used for documentation pages.
@@ -76,8 +76,8 @@ fractal.docs.engine(nunj);
  * Configure the web interface.
  */
 
-fractal.set('web.static.path', 'public');
-fractal.set('web.builder.dest', 'build');
+fractal.web.set('static.path', `${__dirname}/public`);
+fractal.web.set('builder.dest', 'build');
 
  /*
   * Customise the web interface theme.

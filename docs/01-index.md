@@ -2,6 +2,8 @@
 title: Fractal Demo
 ---
 
+{{ 'foo/bar.css' | path }}
+
 This is a demo of the [Fractal](http://github.com/frctl/fractal) web interface. The full source code for this demo repository is [available on Github](https://github.com/frctl/demo). Have a poke around!
 
 ## About this demo
