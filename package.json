@@ -5,9 +5,9 @@
   "author": "Mark Perkins <mark@clearleft.com> (http://clearleft.com)",
   "license": "MIT",
   "dependencies": {
-    "@frctl/fractal": "^1.0.0-beta.0",
-    "@frctl/nunjucks": "^1.0.0-beta.0",
-    "@frctl/handlebars": "^1.0.0-beta.0",
+    "@frctl/fractal": "^1.0.0-beta.9",
+    "@frctl/nunjucks": "^1.0.0-beta.3",
+    "@frctl/handlebars": "^1.0.0-beta.2",
     "request-promise": "^2.0.1"
   },
   "devDependencies": {
