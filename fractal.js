@@ -66,7 +66,7 @@ const nunjucksAdapter = require('@frctl/nunjucks');
 
 const nunj = nunjucksAdapter({
     filter: {
-        link: function filterFunc(){}
+        // link: function filterFunc(){}
     },
 });
 
