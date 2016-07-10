@@ -6,11 +6,3 @@ context:
       url: '#'
     - text: item three
       url: '#'
-variants:
-  - name: 'foo'
-    context:
-      items:
-        - text: item one
-          url: '#'
-        - text: item two
-          url: '#'
