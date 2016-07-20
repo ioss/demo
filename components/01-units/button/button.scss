@@ -1,0 +1,24 @@
+.Button {
+    padding: 10px;
+    // border: 1px solid #ddd;
+    background: #eee;
+    color: #222;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.Button--primary {
+    // border-color: rgb(46, 190, 47);
+    background-color: rgb(87, 236, 120);
+    color: rgb(0, 82, 11);
+}
+
+.Button--secondary {
+    // border-color: rgb(255, 0, 237);
+    background-color: rgb(255, 103, 235);
+    color: #fff;
+}

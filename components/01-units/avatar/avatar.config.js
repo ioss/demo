@@ -2,15 +2,29 @@
 
 const rp = require('request-promise');
 
-const request = rp({
-    uri: 'http://uifaces.com/api/v1/random',
-    json: true
-});
+module.exports = function(){
 
-module.exports = {
+    // Use the https://randomuser.me API to grab some fake user details
+    // and then grab the image URLs from it
 
-    context: {
-        avatarPics: request.then(result => result.image_urls)
-    }
+    const images = rp({
+        uri: 'https://randomuser.me/api/',
+        json: true
+    })
+    .then(res => res.results[0].picture)
+    .catch(e => {
+        return {
+            'thumbnail': 'https://placekitten.com/g/80/80'
+        }
+    });
+
+    return {
+
+        context: {
+            avatarPics: images
+        }
+
+    };
+
 
 };

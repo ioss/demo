@@ -10,7 +10,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
  * General project configuration.
  */
 
-fractal.set('project.title', 'Fractal Demo');
+fractal.set('project.title', 'Fractal');
 
 /*
  * Configure components.
@@ -89,7 +89,8 @@ fractal.web.set('builder.dest', 'build');
   */
 
 const theme = require('@frctl/mandelbrot')({
-    skin: 'maroon'
+    // skin: 'maroon'
+    nav: ['docs', 'components']
 });
 
 fractal.web.theme(theme);

@@ -4,27 +4,6 @@
     box-sizing: inherit;
 }
 
-::selection {
-    background-color: rgba($color-link, 0.075);
-}
-
-html {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: $color-background;
-    box-sizing: border-box;
-    font: 16px/#{(24/16)} $font-family-sans-serif;
-    color: $color-text;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-}
-
 blockquote,
 dl,
 dd,
@@ -68,18 +47,18 @@ ul {
     list-style: none;
 }
 
-a {
-    color: $color-link;
-    transition: all 0.15s ease-out;
-
-    &:active {
-        color: $color-link;
-    }
-
-    &:hover {
-        color: darken($color-link, 15%);
-    }
-}
+// a {
+//     color: $color-link;
+//     transition: all 0.15s ease-out;
+//
+//     &:active {
+//         color: $color-link;
+//     }
+//
+//     &:hover {
+//         color: darken($color-link, 15%);
+//     }
+// }
 
 [tabindex="-1"]:focus {
     outline: none !important;
@@ -87,7 +66,7 @@ a {
 
 code,
 pre {
-    font-family: $font-family-monospace;
+    font-family: monospace;
     font-size: 0.875rem; //14px
     line-height: (24/14);
 }
@@ -98,47 +77,6 @@ svg {
     fill: currentColor;
 }
 
-::-webkit-scrollbar {
-    height: 0.125rem;
-    width: 0.125rem;
-}
-
-::-webkit-scrollbar-button {
-    height: 0;
-    width: 0;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba($color-text, 0.1);
-    border: 0 none transparent;
-    border-radius: 0;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba($color-text, 0.2);
-}
-
-::-webkit-scrollbar-thumb:active {
-    background: rgba($color-text, 0.3);
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    border: 0 none transparent;
-    border-radius: 0;
-}
-
-::-webkit-scrollbar-track:hover {
-    background: transparent;
-}
-
-::-webkit-scrollbar-track:active {
-    background: transparent;
-}
-
-::-webkit-scrollbar-corner {
-    background: transparent;
-}
 
 h1,
 h2,
@@ -146,8 +84,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: $color-heading;
+    color: #222;
     font-weight: bold;
 }
 
-@import '../../src/**/*.scss';
+@import '../../components/**/*.scss';

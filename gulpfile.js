@@ -39,6 +39,7 @@ gulp.task('css:process', function() {
   return gulp.src('assets/css/main.scss')
     .pipe(sassGlob())
     .pipe(sass())
+    .on('error', err => console.log(err.message))
     .pipe(gulp.dest('public/css'));
 });
 
@@ -57,3 +58,5 @@ gulp.task('css', gulp.series('css:clean', 'css:process'));
 
 gulp.task('default', gulp.parallel('css'));
 gulp.task('watch', gulp.parallel('css:watch'));
+
+gulp.task('dev', gulp.series('default', 'fractal:start', 'watch'));
