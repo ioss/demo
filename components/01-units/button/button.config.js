@@ -6,21 +6,21 @@ module.exports = {
     collator: (markup, item) => `<!-- Start: @${item.handle} -->\n<div class="collated-item">\n${markup}</div>\n<!-- End: @${item.handle} -->\n`,
     context: {
         type: 'default',
-        text: "Click here"
+        text: "Standard button"
     },
     variants: [
         {
             name: 'primary-action',
             context: {
                 type: 'primary',
-                text: "Do this thing"
+                text: "Primary action button &rarr;"
             }
         },
         {
             name: 'secondary-action',
             context: {
                 type: 'secondary',
-                text: "You can also do this"
+                text: "Secondary action button"
             }
         }
     ]
