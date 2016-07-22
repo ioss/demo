@@ -1,0 +1,57 @@
+.Header {
+    background-color: $c-brand;
+    padding: 1em;
+    height: 3.15em;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.Logo {
+    position: absolute;
+    left: 1em;
+    top: 0.95em;
+    display: inline-block;
+    z-index: 2;
+}
+.Logo-img {
+    height: 4.25em;
+    border: none;
+}
+.Menu {
+    font-family: $font-secondary-fallback;
+    letter-spacing: 0.1em;
+    text-align: right;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+}
+.wf-active .Menu {
+    font-family: $font-secondary;
+}
+.Menu--close:after {
+    content: ' ';
+    background-image: url('/assets/img/icons/cross.png');
+    background-image: url('/assets/img/icons/cross.png');
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 0.95em;
+    display: inline-block;
+}
+@media screen and (min-width: 40em) {
+    .Logo {
+        top: 0.5em;
+    }
+    .Logo-img {
+        height: 5.25em;
+    }
+}
+@media (min-width: 50em) {
+    .Menu {
+        display: none;
+    }
+}

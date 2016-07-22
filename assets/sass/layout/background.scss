@@ -1,0 +1,19 @@
+@media screen and (min-width: 40em) {
+    .Background {
+        background-position: 0 0;
+        background-repeat: no-repeat; 
+    }
+    .Background--outline {
+        background-image: url('/assets/img/bg/squares-bg.png');
+    }
+    .Background--detail {
+        background-size: cover;
+        background-position: center;
+    }
+    .Background--vibrant {
+        background-color: #83cde5;
+        background-image: url('/assets/img/bg/static-shapes-bg.svg');
+        background-repeat: repeat-x;
+        background-position: 50% 30%;
+    }
+}

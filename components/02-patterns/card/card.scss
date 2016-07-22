@@ -1,0 +1,175 @@
+.Card {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 1em;
+    display: block;
+    &:hover, &:focus {
+        color: #ffffff;
+    }
+}
+.Card:hover .Card-image img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.Card-image {
+    width: 100%;
+    img {
+        width: 100%;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
+}
+.Card-primary {
+    width: 100%;
+    padding: 0.75em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #00a1ca;
+}
+.Card-label {
+    @include font-size(13px);
+}
+.Card-title {
+    font-family: $font-contrast-fallback;
+    @include font-size(17px);
+    line-height: 1.2;
+}
+.wf-active .Card-title {
+    font-family: $font-contrast;
+}
+.Card-description {
+    font-family: $font-secondary-fallback;
+    text-transform: uppercase;
+    @include font-size(12px);
+    margin-bottom: 0;
+}
+.wf-active .Card-description {
+    font-family: $font-secondary;
+}
+/*Alternate the position of the image*/
+.Card:nth-child(2n+1) .Card-image {
+    order: 2;
+}
+/*Different colour backgrounds in a fairly random order*/
+.Card:nth-child(2n+1) .Card-primary {
+    background-color: #2E578B;
+}
+.Card:nth-child(3n+2) .Card-primary {
+     background-color: #0080a6;
+}
+.Card:nth-child(5n+3) .Card-primary {
+    background-color: #0B7D76;
+}
+.Card:nth-child(7n+5) .Card-primary {
+    background-color: #2d93bb;
+}
+.Card:nth-child(11n+7) .Card-primary {
+    background-color: #5C4164;
+}
+@media screen and (min-width: 25em) {
+    .Card {
+        display: flex;
+        margin: 0;
+    }
+    .Card-primary {
+        width: 50%;
+    }
+    .Card-image {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 44em) {
+    .Card {
+        width: 50%;
+        float: left;
+    }
+    .Card:nth-child(3n+1) {
+        float: none;
+        margin-left: 25%;
+    }
+    .Card:nth-child(5n) {
+        float: none;
+        margin-left: 50%;
+    }
+    .Card:nth-child(6n-1) {
+        float: none;
+        margin-left: 50%;
+    }
+    .Card:nth-child(5n-4) {
+        float: none;
+        margin-left: 25%;
+    }
+    .Card:nth-child(5n+5) {
+        float: none;
+        margin-left: 0;
+    }
+    .Card:nth-child(2n+1) .Card-image {
+        order: 0;
+    }
+}
+@media screen and (min-width: 54em) {
+    .Card--single {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin: 0;
+        float: none;
+        width: 25%;
+        margin-bottom: 0;
+        overflow: hidden;
+        margin-bottom: -0.5em;
+    }
+    .Card--single .Card-image {
+        width: 100%;
+    }
+    .Card--single .Card-primary {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+    .Card--single:nth-child(odd) .Card-primary {
+        right: 100%;
+    }
+    .Card--single:nth-child(even) .Card-primary {
+        left: 100%;
+    }
+    .Card--single:nth-child(3n+1), .Card:nth-child(5n-2) {
+        margin-left: 0;
+    }
+    .Card--single:nth-child(odd):hover .Card-primary {
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+    }
+    .Card--single:nth-child(even):hover .Card-primary {
+        transform: translateX(-100%);
+        transition: 0.3s ease-in-out;
+    }
+    .Card--single:first-child {
+        margin-left: 25%;
+        display: block;
+        margin-bottom: -1px;
+    }
+    .Card--single:nth-child(6n) {
+        margin-left: 25%;
+    }
+    .Card--single:nth-child(8n) {
+        margin-left: 50%;
+    }
+}
+@media screen and (min-width: 62em) {
+    .Card-primary {
+        padding: 1.5em;
+    }
+    .Card-label {
+        @include font-size(16px);
+    }
+    .Card-title {
+        @include font-size(29px);
+    }
+    .Card-description {
+        @include font-size(14px);
+    }
+}

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2997px" height="3389px" viewBox="0 0 2997 3389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shapes</title>
+    <defs>
+        <style>
+            .splash-top-right, .splash-bottom-left {
+                -webkit-animation-duration: 950s;
+                animation-duration: 950s;
+                -webkit-animation-name: squares-rotate;
+                animation-name: squares-rotate;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            @-webkit-keyframes squares-rotate {
+                from {
+                    -webkit-transform: scale(0.95) rotate(0deg);
+                }
+                to {
+                    -webkit-transform: scale(1.1) rotate(-360deg);
+                }
+            }
+            @keyframes squares-rotate {
+                from {
+                    transform: scale(0.95) rotate(0deg);
+                }
+                to {
+                    transform: scale(1.1) rotate(-360deg);
+                }
+            }
+            .splash-top-left {
+                -webkit-animation-duration: 950s;
+                animation-duration: 950s;
+                -webkit-animation-name: top-left-rotate;
+                animation-name: top-left-rotate;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            @-webkit-keyframes top-left-rotate {
+                from {
+                    -webkit-transform: translate(0.000000px, 217.000000px) rotate(0deg);
+                }
+                to {
+                    -webkit-transform: translate(0.000000px, 217.000000px) rotate(90deg);
+                }
+            }
+            @keyframes top-left-rotate {
+                from {
+                    transform: translate(0.000000px, 217.000000px) rotate(0deg);
+                }
+                to {
+                    transform: translate(0.000000px, 217.000000px) rotate(90deg);
+                }
+            }
+            .splash-bottom-right {
+                -webkit-animation-duration: 900s;
+                animation-duration: 900s;
+                -webkit-animation-name: bottom-right-rotate;
+                animation-name: bottom-right-rotate;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            @-webkit-keyframes bottom-right-rotate {
+                from {
+                    -webkit-transform: translate(1161.000000px, 2047.000000px) rotate(0deg);
+                }
+                to {
+                    -webkit-transform: translate(1161.000000px, 2047.000000px) rotate(180deg);
+                }
+            }
+            @keyframes bottom-right-rotate {
+                from {
+                    transform: translate(1161.000000px, 2047.000000px) rotate(0deg);
+                }
+                to {
+                    transform: translate(1161.000000px, 2047.000000px) rotate(180deg);
+                }
+            }
+            .splash-centre-right {
+                -webkit-animation-duration: 1000s;
+                animation-duration: 1000s;
+                -webkit-animation-name: centre-right-rotate;
+                animation-name: centre-right-rotate;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            @-webkit-keyframes centre-right-rotate {
+                from {
+                    -webkit-transform: translate(1441.000000px, 1253.000000px) rotate(0deg);
+                }
+                to {
+                    -webkit-transform: translate(1441.000000px, 1253.000000px) rotate(-90deg);
+                }
+            }
+            @keyframes centre-right-rotate {
+                from {
+                    transform: translate(1441.000000px, 1253.000000px) rotate(0deg);
+                }
+                to {
+                    transform: translate(1441.000000px, 1253.000000px) rotate(-90deg);
+                }
+            }
+        </style>
+        <!--outline-->
+        <polygon id="path-1" points="960.033 1139.9 2099.95 1618.32 2578.64 479.039 1438.72 0.616"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1622.607" height="1621.704">
+            <rect x="958.033" y="-1.384" width="1622.607" height="1621.704" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <polygon id="path-3" points="946.468596 1702.81195 483.786446 1757.18579 57.691 1807.26 202.069 3034.47 1429.96 2890.17 1285.58 1662.96"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1376.269" height="1375.51">
+            <rect x="55.691" y="1660.96" width="1376.269" height="1375.51" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <polygon id="path-5" points="183.29 1337.99 0.28 111.9 727.92 3.409 1289.85 349.69 1410.06 1155.08"></polygon>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1413.78" height="1338.581">
+            <rect x="-1.72" y="1.409" width="1413.78" height="1338.581" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <polygon id="path-7" points="842.26 453.482 726 0 728.1 1.3 1291.38 348.42"></polygon>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="565.38" height="453.482" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <polygon id="path-9" points="1227.64 1336.86 0.87 1153.95 121.141576 348.291993 683.01 2.28 1410.66 110.77"></polygon>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1413.79" height="1338.58">
+            <rect x="-1.13" y="0.28" width="1413.79" height="1338.58" fill="white"></rect>
+            <use xlink:href="#path-9" fill="black"></use>
+        </mask>
+        <polygon id="path-11" points="567.54 453.65 119.20931 347.564501 683.81 0.17 683.19 2.57"></polygon>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="564.60069" height="453.48" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <polygon id="path-13" points="0.707 589.45 589.673 1675.9 1205.173 1342.6 1487.183 737.61 1087.753 0.81"></polygon>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1490.476" height="1679.09">
+            <rect x="-1.293" y="-1.19" width="1490.476" height="1679.09" fill="white"></rect>
+            <use xlink:href="#path-13" fill="black"></use>
+        </mask>
+        <polygon id="path-15" points="1206.06635 1344.89362 1099.06 895.978 1489.51813 736.669597"></polygon>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="390.45813" height="608.224021" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+    </defs>
+
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shapes" transform="translate(2.000000, 2.000000)">
+
+            <!--Light blue-->
+            <polygon id="Shape-4" fill="#00C0F0" points="1695.89 416.232 2792.26 647.39 2546.38 1942.88 1450.01 1711.72"></polygon>
+            
+            <!--Dark blue-->
+            <polygon id="Shape-3" fill="#0B84B3" points="223.943 907.085 1322.71 687.578 1607.45 1975.09 508.679 2194.6"></polygon>
+            
+            <!--Teal-->
+            <polygon id="Shape-2" fill="#0FE9D9" opacity="0.52839319" style="mix-blend-mode: screen;" points="2201.68 1119.274 2995.03 1912.38 2016.93 2890.19 1223.58 2097.08"></polygon>
+            
+            <!--Yellow shape-->
+            <g id="Shape-1" style="mix-blend-mode: hard-light;" transform="translate(338.000000, 1066.000000)" opacity="0.945">
+                <polygon id="Shape" fill="#FFBC21" points="893.59 135.5 227.618 0.726 0.105 1123.75 1123.18 1351.04 1272.6 613.48"></polygon>
+                <polygon id="Shape" fill="#FDDC1D" opacity="0.75495569" points="893.12 135.327 1272.8 613.04 851.72 562.95"></polygon>
+            </g>
+
+            <!--Top right outline-->
+            <use class="splash-top-right" id="Outline-5" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" opacity="0.8" xlink:href="#path-1"></use>
+
+            <!--Top left outline-->
+            <g class="splash-top-left" id="Outline-1" opacity="0.803463153" transform="translate(0.000000, 217.000000)" stroke="#FFFFFF" stroke-width="4">
+                <use id="Path" mask="url(#mask-14)" opacity="0.8" xlink:href="#path-13"></use>
+                <use id="Path" mask="url(#mask-16)" opacity="0.8" xlink:href="#path-15"></use>
+            </g>
+
+            <!--Bottom left outline-->
+            <use class="splash-bottom-left" id="Outline-4" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="4" opacity="0.8" xlink:href="#path-3"></use>
+
+            <!--Centre right outline-->
+            <g class="splash-centre-right" id="Outline-3" opacity="0.803463153" transform="translate(1441.000000, 1253.000000)" stroke="#FFFFFF" stroke-width="4">
+                <use id="Path" mask="url(#mask-6)" opacity="0.8" xlink:href="#path-5"></use>
+                <use id="Path" mask="url(#mask-8)" opacity="0.8" xlink:href="#path-7"></use>
+            </g>
+
+            <!--Bottom right outline-->
+            <g class="splash-bottom-right" id="Outline-2" opacity="0.803463153" transform="translate(1161.000000, 2047.000000)" stroke="#FFFFFF" stroke-width="4">
+                <use id="Path" mask="url(#mask-10)" opacity="0.8" xlink:href="#path-9"></use>
+                <use id="Path" mask="url(#mask-12)" opacity="0.8" xlink:href="#path-11"></use>
+            </g>
+
+        </g>
+    </g>
+</svg>

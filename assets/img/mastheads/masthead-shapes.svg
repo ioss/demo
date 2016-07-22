@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2683px" height="2162px" viewBox="0 0 2683 2162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Masthead shapes</title>    
+    <defs>
+        <style>
+        .masthead-top-left {
+            -webkit-animation-duration: 1000s;
+            animation-duration: 1000s;
+            -webkit-animation-name: masthead-squares;
+            animation-name: masthead-squares;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%; 
+        }
+        @-webkit-keyframes masthead-squares {
+        from {
+            -webkit-transform: scale(0.95) rotate(0deg);
+            }
+        to {
+            -webkit-transform: scale(1.1) rotate(-360deg);
+            } 
+        }
+        @keyframes masthead-squares {
+            from {
+                transform: scale(0.95) rotate(0deg);
+            }
+            to {
+                transform: scale(1.1) rotate(-360deg); 
+            } 
+        }
+
+        .masthead-bottom-left {
+            -webkit-animation-duration: 1000s;
+            animation-duration: 1000s;
+            -webkit-animation-name: masthead-bottom-left;
+            animation-name: masthead-bottom-left;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%; 
+        }
+        @-webkit-keyframes masthead-bottom-left {
+            from {
+                -webkit-transform: translate(-10px, 1400px) rotate(0deg);
+            }
+            to {
+                -webkit-transform: translate(-10px, 1400px) rotate(-360deg);
+            } 
+        }
+        @keyframes masthead-bottom-left {
+            from {
+                transform: translate(170px, 1000px) rotate(0deg); 
+            }
+            to {
+                transform: translate(170px, 1000px) rotate(-360deg); 
+            } 
+        }
+        .masthead-bottom-right {
+            -webkit-animation-duration: 950s;
+            animation-duration: 950s;
+            -webkit-animation-name: masthead-bottom-right;
+            animation-name: masthead-bottom-right;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%; 
+        }
+        @-webkit-keyframes masthead-bottom-right {
+            from {
+                -webkit-transform: translate(1441px, 1085px) rotate(0deg);
+            }
+            to {
+                -webkit-transform: translate(1441px, 1085px) rotate(-360deg);
+            } 
+        }
+        @keyframes masthead-bottom-right {
+            from {
+                transform: translate(1441px, 1085px) rotate(0deg); }
+            to {
+                transform: translate(1441px, 1085px) rotate(-360deg); 
+            } 
+        }
+        </style>
+        <polygon id="path-1" points="1354.0164 769.051772 2123.49547 1092 2446.62596 322.950253 1677.14487 0"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1096.60955" height="1096">
+            <rect x="1352.0164" y="-2" width="1096.60955" height="1096" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <polygon id="path-3" points="1077.12142 1172.87717 0.763330971 1012.4034 106.28864 305.569565 599.267456 2.00032909 1237.70169 97.1826552"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1240.93836" height="1174.87684">
+            <rect x="-1.23666903" y="0.000329094988" width="1240.93836" height="1174.87684" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <polygon id="path-5" points="497.955011 398.004076 104.593286 304.931308 599.969369 0.149147345 599.425386 2.25475692"></polygon>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="495.376084" height="397.854929" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <polygon id="path-7" points="146.715838 1071.004 0.224128073 89.5711835 582.668954 2.72875929 1032.46998 279.91195 1128.69297 924.592338"></polygon>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1132.46884" height="1072.27524">
+            <rect x="-1.77587193" y="0.728759291" width="1132.46884" height="1072.27524" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+        <polygon id="path-9" points="674.193253 362.993025 581.132075 0 582.813036 1.04059463 1033.69468 278.895369"></polygon>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="452.562607" height="362.993025" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <polygon id="path-11" points="982.673528 1070.09949 0.696397942 923.687822 96.9686714 278.792905 546.720412 1.82504288 1129.17324 88.6666667"></polygon>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="1132.47684" height="1072.27444">
+            <rect x="-1.30360206" y="-0.174957118" width="1132.47684" height="1072.27444" fill="white"></rect>
+            <use xlink:href="#path-11" fill="black"></use>
+        </mask>
+        <polygon id="path-13" points="454.291595 363.127501 95.4219749 278.210578 547.360778 0.136077759 546.864494 2.05717553"></polygon>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="451.938803" height="362.991424" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shapes" transform="translate(0.000000, 3.000000)">
+            
+            <!--Back blue shape-->
+            <polygon id="Shape-3" fill="#00BFEF" transform="translate(1042.933365, 788.290452) scale(-1, 1) translate(-1042.933365, -788.290452) " points="362.607204 263.107867 1443.22325 47.2269868 1723.25953 1313.47009 642.639542 1529.35392"></polygon>
+            <use id="Outline-5" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" opacity="0.508896922" xlink:href="#path-1"></use>
+
+            <!--Front blue shape-->
+            <polygon id="Shape-2" fill="#00BFEF" opacity="0.814598881" style="mix-blend-mode: hard-light;" points="0 1128.88272 922.333335 2074.60065 1670.45025 1307.5208 748.116912 361.806747"></polygon>
+
+            <!--Top left outline-->
+            <g class="masthead-top-left" id="Outline-2" opacity="0.798624067" transform="translate(295.000000, 983.000000)" stroke="#FFFFFF" stroke-width="4">
+                <use id="Path" mask="url(#mask-4)" opacity="0.8" xlink:href="#path-3"></use>
+                <use id="Path" mask="url(#mask-6)" opacity="0.8" xlink:href="#path-5"></use>
+            </g>
+            
+            <!--Bottom left outline-->
+            <g class="masthead-bottom-left" id="Outline-3" opacity="0.748017724" transform="translate(339.000000, 194.000000)" stroke="#FFFFFF" stroke-width="4">
+                <use id="Path" mask="url(#mask-8)" opacity="0.8" xlink:href="#path-7"></use>
+                <use id="Path" mask="url(#mask-10)" opacity="0.8" xlink:href="#path-9"></use>
+            </g>
+
+            <!--Bottom right outline-->
+            <g class="masthead-bottom-right" id="Outline-2" opacity="0.803463153" transform="translate(1468.000000, 1085.000000)" stroke="#FFFFFF" stroke-width="4">
+                <use id="Path" mask="url(#mask-12)" opacity="0.8" xlink:href="#path-11"></use>
+                <use id="Path" mask="url(#mask-14)" opacity="0.8" xlink:href="#path-13"></use>
+            </g>
+
+            <!--Yellow shape-->
+            <g id="Shape-1" opacity="0.946478545" transform="translate(1992.832762, 1125.325043) scale(-1, 1) translate(-1992.832762, -1125.325043) translate(1303.332762, 393.825043)">
+                <polygon id="Shape" fill="#F8CA2E" opacity="0.881296642" points="967.567494 146.728519 246.461775 0.786161661 0.113692618 1216.87213 1216.16453 1462.99704 1377.95454 664.317432"></polygon>
+                <polygon id="Shape" fill="#FDDC1D" points="967.058584 146.541183 1378.17109 663.840971 922.231209 609.600148"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<footer class="Slab">
+    <div class="c-muted Slab-item">
+        <div class="Slab-content">
+        <a href="http://clearleft.com/">
+            <img class="FooterLogo" src="{{path '/assets/img/clearleft-logo.svg'}}" onerror="this.src='{{path '/assets/img/clearleft-logo.png' }}'; this.onerror=null;">
+        </a>
+        <p>Leading Design is brought to you by Clearleft. We’re a strategic consultancy and design studio based in sunny Brighton by the sea. We work with an eclectic range of industries and organisations to improve UX design proficiency, investigate complex problems, and give new life to digital products and services.</p>
+        <small>LEADING DESIGN © CLEARLEFT LIMITED. ALL RIGHTS RESERVED.</small>
+        </div>
+    </div>
+    <div class="Slab-item Slab--switch">
+        <div class="Slab-content Container">
+            {{render '@list' firstList}}
+            {{render '@list' secondList}}
+        </div>
+    </div>
+</footer>

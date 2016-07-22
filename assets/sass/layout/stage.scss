@@ -1,0 +1,23 @@
+.Stage {
+    max-width: 21em;
+    margin: 0 auto;
+    padding: 1em;
+}
+.Stage--wide {
+    max-width: 36em;
+}
+@media screen and (min-width: 44em) {
+    .Stage {
+        max-width: 41em;
+        overflow: hidden;
+    }
+    .Stage--wide {
+        max-width: 50em;
+    }
+}
+@media screen and (min-width: 62em) {
+    .Stage {
+        max-width: 60em;
+        padding: 1em;
+    }
+}

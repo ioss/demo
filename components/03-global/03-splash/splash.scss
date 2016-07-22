@@ -1,0 +1,106 @@
+.Splash {
+    color: $c-bold;
+    background-image: url('../img/bg/rotating-shapes.svg');
+    background-color: #83CDE5;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: 50% 80%;
+    height: calc(100vh - 3.15em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Splash-content {
+    padding: 1em;
+    text-align: center;
+    max-width: 16em;
+}
+.Splash-sub {
+    @include font-size(20px);
+    font-size: 0.86em;
+    margin-bottom: 1em;
+}
+.Splash-info {
+    font-family: $font-secondary-fallback;
+    @include font-size(22px);
+    margin-bottom: 1em;
+}
+.wf-active .Splash-info {
+    font-family: $font-secondary;
+}
+.Splash-header {
+    font-family: $font-contrast-fallback;
+    @include font-size(40px);
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    display: block;
+}
+.wf-active .Splash-header {
+    font-family: $font-contrast;
+}
+@media all and (min-width: 20em) {
+    .Splash {
+        background-position: 50% 60%;
+    }
+    .Splash-header {
+        @include font-size(60px);
+    }
+    .Splash-content {
+        max-width: none;
+    }
+    .Splash-sub {
+        @include font-size(24px);
+    }
+    .Splash-info {
+        @include font-size(28px);
+    }
+}
+@media all and (min-width: 30em) {
+    .Splash {
+        background-size: 180%;
+    }
+}
+@media all and (min-width: 50em)  {
+    .Splash {
+        background-position: 50% 80%;
+    }
+    .Splash-header {
+        @include font-size(70px);
+    }
+    .Splash-sub {
+        @include font-size(27px);
+    }
+    .Splash-info {
+        @include font-size(38px);
+    }
+}
+@media all and (min-width: 50em) and (orientation:landscape) {
+    .Splash-header {
+        @include font-size(80px);
+    }
+    .Splash-sub {
+        @include font-size(31px);
+    }
+}
+@media all and (min-width: 52em)  {
+    .Splash {
+        background-position: 50% 55%;
+        background-size: 130%;
+    }
+}
+@media all and (min-width: 64em)  {
+    .Splash-header {
+        @include font-size(90px);
+    }
+    .Splash-info {
+        @include font-size(40px);
+    }
+}
+@media all and (min-width: 80em)  {
+    .Splash {
+        background-size: 115%;
+        background-position: 50% 57%;
+    }
+}

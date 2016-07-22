@@ -35,16 +35,18 @@ gulp.task('fractal:build', function(){
     });
 });
 
+/* CSS */
+
 gulp.task('css:process', function() {
-  return gulp.src('assets/css/main.scss')
+  return gulp.src('assets/sass/build.scss')
     .pipe(sassGlob())
     .pipe(sass())
     .on('error', err => console.log(err.message))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('public/assets/css'));
 });
 
 gulp.task('css:clean', function() {
-    return del(['public/css']);
+    return del(['public/assets/css']);
 });
 
 gulp.task('css:watch', function () {
@@ -56,7 +58,43 @@ gulp.task('css:watch', function () {
 
 gulp.task('css', gulp.series('css:clean', 'css:process'));
 
-gulp.task('default', gulp.parallel('css'));
-gulp.task('watch', gulp.parallel('css:watch'));
+
+/* Fonts */
+
+gulp.task('fonts:copy', function() {
+  return gulp.src('assets/fonts/**/*')
+    .pipe(gulp.dest('public/assets/fonts'));
+});
+
+gulp.task('fonts:clean', function(done) {
+    return del(['public/assets/fonts'], done);
+});
+
+gulp.task('fonts', gulp.series('fonts:clean', 'fonts:copy'));
+
+gulp.task('fonts:watch', function() {
+    gulp.watch('assets/fonts/**/*', gulp.parallel('fonts'));
+});
+
+/* Images */
+
+gulp.task('images:copy', function() {
+  return gulp.src('assets/img/**/*')
+    .pipe(gulp.dest('public/assets/img'));
+});
+
+gulp.task('images:clean', function(done) {
+    return del(['public/assets/img'], done);
+});
+
+gulp.task('images', gulp.series('images:clean', 'images:copy'));
+
+gulp.task('images:watch', function() {
+    gulp.watch('assets/img/**/*', gulp.parallel('images'));
+});
+
+
+gulp.task('default', gulp.parallel('css', 'fonts', 'images'));
+gulp.task('watch', gulp.parallel('css:watch', 'fonts:watch', 'images:watch'));
 
 gulp.task('dev', gulp.series('default', 'fractal:start', 'watch'));

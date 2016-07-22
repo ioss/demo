@@ -1,0 +1,10 @@
+collated: true
+context:
+  url: '#'
+  text: 'This is a button'
+variants:
+  - name: 'muted'
+    context:
+      url: '#'
+      modifier: muted
+      text: 'A muted button'

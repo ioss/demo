@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: 'Effra Light';
+  src: url('/assets/fonts/effra-light.woff2') format('woff2'), url('/assets/fonts/effra-light.woff') format('woff');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Effra Medium';
+  src: url('/assets/fonts/effra-med.woff2') format('woff2'), url('/assets/fonts/effra-med.woff') format('woff');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Tiempos Semibold';
+  src: url('/assets/fonts/TiemposTextWeb-Semibold.woff2') format('woff2'), url('/assets/fonts/TiemposTextWeb-Semibold.woff') format('woff');
+}
+
+.SectionHeading {
+    font-family: $font-secondary-fallback;
+    text-transform: uppercase;
+    @include font-size(16px);
+    letter-spacing: 0.1em;
+    color: #0B7793;
+}
+.wf-active .SectionHeading {
+    font-family: $font-secondary;
+}
+.Contrast {
+    font-family: $font-contrast;
+}

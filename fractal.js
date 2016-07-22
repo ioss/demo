@@ -10,14 +10,14 @@ const fractal = module.exports = require('@frctl/fractal').create();
  * General project configuration.
  */
 
-fractal.set('project.title', 'Fractal');
+fractal.set('project.title', 'Leading Design');
 
 /*
  * Configure components.
  */
 
 fractal.components.set('path', `${__dirname}/components`);
-fractal.components.set('default.preview', '@skeleton');
+fractal.components.set('default.preview', '@preview');
 
 /*
  * Configure the Handlebars template engine used by components
@@ -65,9 +65,10 @@ fractal.docs.set('path', `${__dirname}/docs`);
 const nunjucksAdapter = require('@frctl/nunjucks');
 
 const nunj = nunjucksAdapter({
-    filter: {
-        // link: function filterFunc(){}
-    },
+    paths: [require.resolve('@frctl/mandelbrot') + '/../views'],
+    globals: {
+        frctl: fractal
+    }
 });
 
 fractal.docs.engine(nunj);

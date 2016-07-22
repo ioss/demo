@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: $base-font-size;
+}
+body {
+    font-family: $font-primary-fallback;
+    line-height: 1.5;
+    color: #727272;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.wf-active body {
+    font-family: $font-primary;
+}
+h1 {
+    line-height: 1.1;
+}
+h1, h2, h3 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+h2, h3 {
+    @include font-size($base-font-size);
+}
+h3 {
+    font-family: $font-secondary-fallback;
+}
+.wf-active h3 {
+    font-family: $font-secondary;
+}
+p {
+    line-height: 1.45;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    letter-spacing: 0.05em;
+    font-weight: 200;
+}
+a {
+    color: #11819d;
+    display: inline-block;
+    &:hover, &:focus {
+        color: $c-brand;
+    }
+}
+img {
+    display: block;
+}
+nav {
+
+}
+@media screen and (min-width: 50em) {
+    p {
+        line-height: 1.45;
+    }
+}
+@media screen and (min-width: 40em) {
+    p {
+        line-height: 1.45;
+    }
+}

@@ -1,0 +1,4 @@
+/*Calculate the rem value for font size and output both px and rem values*/
+@mixin font-size($px) {
+    font-size: $px / $base-font-size * 1rem;
+}
